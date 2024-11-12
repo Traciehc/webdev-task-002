@@ -20,8 +20,6 @@ function lastMessage(nextTime){
 }
 lastMessage(nextTime);
 
-
-
 let audio;
      window.addEventListener('load', init, false);
      window.addEventListener('click', playPause, false);

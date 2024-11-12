@@ -1,0 +1,121 @@
+@import url("css/reset.css");
+
+body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    min-height: 100vh;
+}
+
+.title {
+    display: flex;
+    width: 50%;
+    color: rgb(96, 143, 247);
+    text-transform: uppercase;
+}
+
+.header {
+    color: blue;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+    width: 100%; /* Make header span full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.header .logo {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+aside,
+article,
+footer,
+.column {
+    padding: 2rem;
+    border: 2px solid black;
+    margin: 2rem auto;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    flex-grow: 1; /* Ensure it takes up available space */
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically by default */
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.column-container .container {
+    margin: 0 auto; 
+    max-width: 1170px;
+}
+
+.column-container section {
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    padding: 6px 12px;
+    line-height: 1.4;
+    border-radius: 3px;
+}
+
+.form-control {
+    display: block; 
+    padding: 6px 12px;
+    line-height: 1.4;
+    color: #8598a2; 
+    border: 1px solid #a0a0a0;
+}
+
+.list {
+    background-color: rgb(142, 155, 183);
+    letter-spacing: 1.5px;
+    font-size: larger;
+    color: white;
+}
+
+.list-2 {
+    background-color: rgb(142, 155, 183); /* Corrected spelling */
+    letter-spacing: 1.5px;
+    font-size: larger;
+    color: white;
+}
+
+.p1 {
+    text-align: inherit;
+    font-size: 16px;
+}
+.twitter { background-image: url('img/twitter.svg'); }
+.facebook { background-image: url('img/facebook.svg'); }
+.instagram { background-image: url('img/instagram.svg'); }
+
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: rgba(132, 191, 191, 0.244);
+    }
+
+    .container {
+        flex-direction: row; /* Switch to horizontal layout on larger screens */
+    }
+
+    .column-container {
+        flex-direction: row; /* Switch to horizontal layout for columns on larger screens */
+    }
+}

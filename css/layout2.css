@@ -1,0 +1,37 @@
+@import url("css\reset.css");
+
+body{
+    padding: 2rem;
+    display: flex;
+}
+header,
+aside,
+article,
+footer,
+.column {
+    padding: 2rem;
+    border: 2px solid black;
+    margin: 2rem auto;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (min-width: 800px){
+   
+    body{
+        background-color: aqua;
+
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.column-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-transform: uppercase;
+    
+   
+}

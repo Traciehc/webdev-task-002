@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags provide information about the HTML document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code You Web Dev - Flexbox & Grid Layouts</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css\layout1.css">
+
+</head>
+
+<body>
+    <header>Header
+
+    </header>
+       <aside>Aside 1</aside>
+                     
+   <article>Article
+<div class="column-container">
+    <div class="column">Column 1</div>
+    <div class="column" >Column 2</div>
+    <div class="column">Column 3</div>
+
+</div>
+   </article>
+   <aside>Aside 2</aside>
+<footer>Footer</footer>
+    <!-- Link to the external JavaScript file -->
+    <script src="js/app.js"></script>
+ 
+</body>
+
+</html>
